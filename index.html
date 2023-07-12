@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BST Tree</title>
+
+  <style>
+    .navbar{
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      /* border: 2px solid slategray;
+      border-radius: 3px; */
+      padding: 3px;
+    }
+
+    .bstInput{
+      width: 200px;
+      padding: 4px 4px 4px 8px;
+      border: 2px solid slategray;
+      border-radius: 3px;
+    }
+
+    .bstInput:focus{
+      outline: #ffffff;
+    }
+
+    button{
+      border: none;
+      border-radius: 3px;
+      background-color: #22d3ee;
+      color: white;
+    }
+
+    button:hover{
+      border: 2px solid #22d3ee;
+      cursor: pointer;
+      color: #22d3ee;
+      background: white;
+    }
+
+
+  </style>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <input type="text" class="bstInput" id="bstInput"/>
+    <button class="cnsrt" onclick="getData();">Construct</button>
+  </div>
+</body>
+
+</html>
