@@ -8,15 +8,16 @@
   <style>
     .navbar{
       display: flex;
-      gap: 6px;
+      gap: 8px;
       justify-content: center;
-      /* border: 2px solid slategray;
-      border-radius: 3px; */
+      align-items: center;
       padding: 3px;
     }
 
     .bstInput{
-      width: 200px;
+      width: 300px;
+      height: 25px;
+      font-size: 20px;
       padding: 4px 4px 4px 8px;
       border: 2px solid slategray;
       border-radius: 3px;
@@ -28,7 +29,9 @@
 
     button{
       border: none;
-      border-radius: 3px;
+      font-size: 18px;
+      padding: 8px;
+      border-radius: 6px;
       background-color: #22d3ee;
       color: white;
     }
@@ -40,15 +43,36 @@
       background: white;
     }
 
+    #display{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+    }
+
+    .eachNode{
+      
+      width:fit-content;
+      font-size: 20px;
+      border: 2px solid black;
+      border-radius: 3px;
+      padding: 4px;
+    }
+
 
   </style>
   <script src="index.js"></script>
 </head>
 <body>
-  <div class="navbar">
-    <input type="text" class="bstInput" id="bstInput"/>
-    <button class="cnsrt" onclick="getData();">Construct</button>
+  <div>
+    <div class="navbar">
+      <input type="text" class="bstInput" id="bstInput" />
+      <button class="cnsrt" onclick="getData();">Construct</button>
+    </div>
+    <div  id="display"></div>
   </div>
+  
 </body>
 
 </html>
