@@ -14,8 +14,8 @@ const convertRawData = (rawDataFromInput) => {
 }
 
 const enterDataInHtml = (data) => {
-  console.log(window.innerWidth);
-  let position = window.innerWidth/2, width = window.innerWidth;
+  
+  let position = window.innerWidth/2;
   document.getElementById("display").innerHTML = data.map((eachnode, i) => {
     if (i == 0) {
       return (`<div class="eachNode" style="left:${position}px"> ${eachnode} </div>`);
