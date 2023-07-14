@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BST Tree</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BST Tree</title>
 
-  <style>
-    .navbar{
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      align-items: center;
-      padding: 3px;
-      margin: 20px 20px 50px 20px;
-    }
+    <style>
+      .navbar {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        margin: 20px 20px 50px 20px;
+      }
 
-    .bstInput{
-      width: 300px;
-      height: 25px;
-      font-size: 20px;
-      padding: 4px 4px 4px 8px;
-      border: 2px solid slategray;
-      border-radius: 3px;
-    }
+      .bstInput {
+        width: 300px;
+        height: 25px;
+        font-size: 20px;
+        padding: 4px 4px 4px 8px;
+        border: 2px solid slategray;
+        border-radius: 3px;
+      }
 
-    .bstInput:focus{
-      outline: #ffffff;
-    }
+      .bstInput:focus {
+        outline: #ffffff;
+      }
 
-    button{
-      border: none;
-      font-size: 18px;
-      padding: 8px;
-      border-radius: 6px;
-      background-color: #22d3ee;
-      color: white;
-    }
+      button {
+        border: none;
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 6px;
+        background-color: #22d3ee;
+        color: white;
+      }
 
-    button:hover{
-      border: 2px solid #22d3ee;
-      cursor: pointer;
-      color: #22d3ee;
-      background: white;
-    }
+      button:hover {
+        border: 2px solid #22d3ee;
+        cursor: pointer;
+        color: #22d3ee;
+        background: white;
+      }
 
-    #display{
-      position: relative;
-    }
+      #display {
+        position: relative;
+      }
 
-    .eachNode{
-      position: absolute;
-      width: auto;
-      font-size: 20px;
-      border: 2px solid black;
-      border-radius: 100%;
-      padding: 7px 14px 7px 14px;
-    }
-
-
-  </style>
-  <script src="index.js"></script>
-</head>
-<body>
-  <div>
-    <div class="navbar">
-      <input type="text" class="bstInput" id="bstInput" />
-      <button class="cnsrt" onclick="getData();">Construct</button>
+      .eachNode {
+        position: absolute;
+        /* width: auto; */
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 100%;
+        padding: 7px 14px 7px 14px;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="navbar">
+        <input type="text" class="bstInput" id="bstInput" />
+        <button class="cnsrt" onclick="getData();">Construct</button>
+      </div>
+      <div id="display"></div>
     </div>
-    <div  id="display"></div>
-  </div>
-  
-</body>
-
+  </body>
 </html>

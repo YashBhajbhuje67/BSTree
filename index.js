@@ -17,15 +17,17 @@ const enterDataInHtml = (data) => {
   var position = 50;
   document.getElementById("display").innerHTML = data.map((eachnode, i) => {
     if (i == 0) {
-      return (`<div class="eachNode" style="left:50%"> ${eachnode} </div>`)
+      return (`<div class="eachNode" style="left:50%"> ${eachnode} </div>`);
     }
     else if (data[i - 1] > data[i]) {
       position -= 5;
-      return (`<div class="eachNode" style="top:${i * 50}px; left:${position}%"> ${eachnode} </div>`)
+      return (`<div class="eachNode" style="top:${i * 50}px; left:${position}%"> ${eachnode} </div>
+      <svg><line x1="${position + 5}" y1="${(i-1)*50}" x2="${position}" y2="${i*50}" style:"stroke:rgb(0,0,0); stroke-width:2"/></svg>`);
     }
     else {
       position += 5;
-      return (`<div class="eachNode" style="top:${i * 50}px; left:${position}%"> ${eachnode} </div>`)
+      return (`<div class="eachNode" style="top:${i * 50}px; left:${position}%"> ${eachnode} </div>
+      <svg><line x1="${position - 5}" y1="${(i-1)*50}" x2="${position}" y2="${i*50}" style:"stroke:rgb(0,0,0); stroke-width:2"/></svg>`);
     }
   }).join('')
 
