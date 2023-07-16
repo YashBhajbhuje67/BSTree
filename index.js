@@ -28,7 +28,7 @@ const enterDataInHtml = (data) => {
     else {
       position += 80;
       return (`<div class="eachNode" style="top:${index * 60}px; left:${position}px"> ${eachnode} </div>
-      <svg height='60' width='${window.innerWidth-10}'><line x1='${position-40}' y1='45' x2='${position+40}' y2='105' stroke='black'/></svg>`);
+      <svg height='57' width='${window.innerWidth-10}'><line x1='${position-30}' y1='45' x2='${position+60}' y2='110' stroke='black'/></svg>`);
     }
   }).join('')
 
